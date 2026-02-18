@@ -1,0 +1,14 @@
+{
+  "name": "smart-parking-system",
+  "version": "1.0.0",
+  "description": "Smart Parking System with Live Location, Parking Slots, and Result Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Divya Srhree",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
