@@ -29,7 +29,7 @@ The Smart Parking System is a state-of-the-art solution designed to streamline t
    ```
 
 ## Usage Guide
-1. Open the application in your browser at `http://localhost:3000`.
+1. Open the application in your browser.
 2. Sign up or log in to access the dashboard.
 3. View available parking spots and manage bookings.
 
