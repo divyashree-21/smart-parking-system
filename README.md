@@ -34,4 +34,4 @@ The Smart Parking System is a state-of-the-art solution designed to streamline t
 3. View available parking spots and manage bookings.
 
 ## Website Link
-For more information about the project, you can visit [Smart Parking System Website] http://localhost:3000
+For more information about the project, you can visit [Smart Parking System Website]
