@@ -6,9 +6,10 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Divya Srhree",
+  "author": "Divya Shree M",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "sqlite3": "5.1.6"
   }
 }
