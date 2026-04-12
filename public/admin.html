@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+if (localStorage.getItem("admin") !== "true") {
+  alert("Admin login required");
+  location.href = "/login.html";
+}
+</script>
+
+<h2>Admin Dashboard</h2>
+<ul id="list"></ul>
+
+<script>
+const list = document.getElementById("list");
+
+fetch("/api/slots")
+  .then(res => res.json())
+  .then(data => {
+    list.innerHTML = "";
+    data.forEach(s => {
+      list.innerHTML += `
+        <li>
+          ${s.name} -
+          <strong style="color:${s.available ? 'green' : 'red'}">
+            ${s.available ? "Available" : "Occupied"}
+          </strong>
+        </li>
+      `;
+    });
+  });
+</script>
+
+</body>
+</html>
