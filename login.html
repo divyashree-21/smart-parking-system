@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>User Login</h2>
+<input id="user" placeholder="Enter username">
+<button onclick="userLogin()">Login</button>
+
+<h2>Admin Login</h2>
+<input id="admin">
+<input id="pass" type="password">
+<button onclick="adminLogin()">Admin Login</button>
+
+<script>
+function userLogin() {
+  const u = document.getElementById("user").value.trim();
+  if (!u) return alert("Enter username");
+  localStorage.setItem("user", u);
+  localStorage.setItem("admin", "false");
+  location.href = "/index.html";
+}
+
+function adminLogin() {
+  const a = document.getElementById("admin").value;
+  const p = document.getElementById("pass").value;
+
+  if (a === "admin" && p === "admin123") {
+    localStorage.setItem("admin", "true");
+    location.href = "admin.html";
+  } else {
+    alert("Wrong admin login");
+  }
+}
+</script>
+
+</body>
+</html>
