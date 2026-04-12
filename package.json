@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Divya Shree M",
+  "author": "Divya Srhree",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
